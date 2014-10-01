@@ -2,12 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %} | MatCarey.co.uk </title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    <header>
+        <div class="hgroup">
+            <h1>MatCarey.co.uk</h1>
+            <h2>Mat Carey's personal site</h2>
+        </div>
+        <aside>
+            <a href="http://dorightdigital.com/">Founder of <img src="/DRD_logo.jpg" alt="Do Right Digital"/></a>
+        </aside>
+    </header>
+    <main>
         {% block body %}{% endblock %}
+    </main>
         {% block javascripts %}{% endblock %}
+        <link rel="stylesheet" href="/style.css" />
     </body>
 </html>

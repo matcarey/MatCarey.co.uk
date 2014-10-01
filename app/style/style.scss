@@ -1,0 +1,46 @@
+@import "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: #153452;
+  > header {
+    overflow: auto;
+    > * {
+      display: block;
+      width: 50%;
+      float: left;
+    }
+
+    aside {
+      width: 213px;
+      float: right;
+      text-align: center;
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+    color: white;
+  }
+  > main,
+  > header {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  > main {
+    background: white;
+  }
+}
